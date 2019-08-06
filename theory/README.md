@@ -4,7 +4,7 @@
 
 Fill out truth tables for the following expressions:
 
-1. `(A ∨ ¬B)`   (alternate: `(A || !B)`)
+1. `(A ∨ ¬B)`   (alternate: `(A || !B)`) 
 ```
 A     B     result
 -------------------
@@ -14,7 +14,7 @@ A     B     result
 1     1       True
 ```
 
-2. `(¬A ∨ B) ∧ ¬(A ∧ ¬B)`   (alternate: `(!A || B) && !(A && !B)`)
+2. `(¬A ∨ B) ∧ ¬(A ∧ ¬B)`   (alternate: `(!A || B) && !(A && !B)`) 
 ```
 A     B     result
 -------------------
@@ -24,19 +24,19 @@ A     B     result
 1     1       False
 ```
 
-3. `¬(A ∨ B) ∨ ( (A ∨ C) ∧ ¬(B ∨ ¬C) )`   (alternate: `!(A || B) || ( (A || C) && !(B || !C) )`)
+3. `¬(A ∨ B) ∨ ( (A ∨ C) ∧ ¬(B ∨ ¬C) )`   (alternate: `!(A || B) || ( (A || C) && !(B || !C) )`) (a == false or b == false) OR ((a == true or c == true) AND (b == false or c == true) )
   * (Hint: Is it possible to calculate this using code?)
 ```
 A     B     C     result
 -------------------------
-0     0     0       ?
-0     0     1       ?
-0     1     0       ?
-0     1     1       ?
-1     0     0       ?
-1     0     1       ?
-1     1     0       ?
-1     1     1       ?
+0     0     0       False
+0     0     1       True
+0     1     0       False
+0     1     1       True
+1     0     0       False
+1     0     1       True
+1     1     0       False
+1     1     1       False
 ```
 
 ## STRETCH GOAL
